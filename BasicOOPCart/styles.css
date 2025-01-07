@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-grey: #1b1b32;
+  --light-grey: #f5f6f7;
+  --black: #000;
+  --white: #805f5f;
+  --grey: #3b3b4f;
+  --golden-yellow: #fecc4c;
+  --yellow: #ffcc4c;
+  --gold: #feac32;
+  --orange: #ffac33;
+  --dark-orange: #f89808;
+}
+
+body {
+  background-color: var(--dark-grey);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 50px; /* Add some top padding to avoid overlap with the header */
+}
+
+.title {
+  color: var(--light-grey);
+  text-align: center;
+  margin: 25px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#dessert-card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px; /* Give space at the bottom so the cart doesn't overlap */
+}
+
+.dessert-card {
+  background-color: var(--light-grey);
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dessert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dessert-price {
+  font-size: 1.4rem;
+  color: var(--golden-yellow);
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.dessert-card h2 {
+  font-size: 1.5rem;
+  color: var(--grey);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: var(--dark-grey);
+  background-color: var(--gold);
+  background-image: linear-gradient(var(--golden-yellow), var(--orange));
+  border-color: var(--gold);
+  border-width: 3px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(var(--yellow), var(--dark-orange));
+  transform: scale(1.05);
+}
+
+#cart-btn {
+  position: fixed;
+  top: 35px;
+  right: 15px;
+  z-index: 1000; /* Ensure the cart button stays on top of other content */
+  background-color: var(--golden-yellow);
+  padding: 15px 25px; /* Adjusted to give a rectangular shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px; /* Changed from circle to rectangle */
+}
+
+#cart-btn:hover {
+  transform: scale(1.05); /* Added scale effect for hover */
+}
+.add-to-cart-btn {
+  margin: 30px auto 10px;
+}
+
+#cart-container {
+  display: none;
+  position: fixed;
+  top: 80px; /* Positioned below the "Show Cart" button */
+  right: 15px;
+  background-color: var(--light-grey);
+  width: 300px;
+  height: 400px;
+  border: 8px double var(--black);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  overflow-y: scroll;
+  z-index: 999; /* Ensure the cart stays on top of other content */
+  padding: 20px;
+}
+
+#cart-container p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.product {
+  margin: 25px 0;
+}
+
+.product-count {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.product-category {
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  #dessert-card-container {
+    flex-direction: row;
+  }
+
+  .dessert-card {
+    flex: 1 0 21%;
+  }
+
+  #cart-container {
+    width: 300px;
+  }
+}
+
+
+
