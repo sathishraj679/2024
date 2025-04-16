@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Manager</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Manager</h1>
+
+    <!-- Add Employee Button -->
+    <div style="text-align: right;">
+      <a href="addEmployee.html" class="btn">Add New Employee</a>
+    </div>
+
+    <!-- Filter and Search Section -->
+    <div class="filter-container">
+      <label for="department-filter">Filter by Department:</label>
+      <select id="department-filter"></select>
+
+      <label for="search-box">Search by Name:</label>
+      <input type="text" id="search-box" placeholder="Enter employee name" />
+    </div>
+
+    <!-- Employees Table -->
+    <table id="employee-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employee-list"></tbody>
+    </table>
+  </div>
+
+  <!-- Edit Employee Modal -->
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Edit Employee</h2>
+      <form id="edit-employee-form">
+        <input type="hidden" id="edit-id" />
+        
+        <label for="edit-name">Name:</label>
+        <input type="text" id="edit-name" required />
+        
+        <label for="edit-surname">Surname:</label>
+        <input type="text" id="edit-surname" required />
+        
+        <label for="edit-email">Email:</label>
+        <input type="email" id="edit-email" required />
+        
+        <label for="edit-department">Department:</label>
+        <select id="edit-department" required></select>
+        
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

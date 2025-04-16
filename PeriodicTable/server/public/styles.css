@@ -1,0 +1,277 @@
+/* General styles for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  h1 {
+    text-align: center;
+    margin:0;
+  }
+  .periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 0.75fr); 
+    grid-template-rows: repeat(9, 85px);  
+    margin:10px 20px;
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+  .Row1, .Row2, .Row3, .Row4, .Row5, .Row6, .Row7, .Row8, .Row9 {
+    display: contents; 
+  }
+  .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 40px;
+    height: 50px;
+  }
+  .atomic-number {
+    font-size: 0.8em;
+    color: #555;
+  }
+  .symbol {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  .name {
+    font-size: 0.8em;
+    color: #333;
+  }
+
+  .alkali-metal { background-color: #FFB5B5; }
+.alkaline-earth-metal { background-color: #FFD59E; }
+.transition-metal { background-color: #C5D9FF; }
+.post-transition-metal { background-color: #D1C4E9; }
+.metalloid { background-color: #FFD700; }
+.reactive-nonmetal { background-color: #98D8EF; }
+.noble-gas { background-color: #FFA09B; }
+.lanthanide { background-color: #A6E3A1; }
+.actinide { background-color: #FFCC80; }
+
+.legend-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; 
+  max-width: 80%;
+  margin: 15px auto; 
+  text-align: center;
+  position: absolute;
+  top:4%;
+  left:10%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #333;
+  gap: 6px; 
+}
+
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .legend-container{
+    position:absolute;
+    left:30%;
+    top:10%;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  padding-top: 60px;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  display: block; 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  .Row1 .element:nth-child(1) { grid-column: 1; }
+  .Row1 .element:nth-child(2) { grid-column: 18; }
+
+  .Row2 .element:nth-child(1) { grid-column: 1; }
+  .Row2 .element:nth-child(2) { grid-column: 2; }
+  .Row2 .element:nth-child(3) { grid-column: 13;  }
+  .Row2 .element:nth-child(4) { grid-column: 14; }  
+  .Row2 .element:nth-child(5) { grid-column: 15;}
+  .Row2 .element:nth-child(7) { grid-column: 17; }
+  .Row2 .element:nth-child(8) { grid-column: 18; }
+  
+  .Row3 .element:nth-child(1) { grid-column: 1; }
+  .Row3 .element:nth-child(2) { grid-column: 2; }
+  .Row3 .element:nth-child(3) { grid-column: 13;  }
+  .Row3 .element:nth-child(4) { grid-column: 14; }  
+  .Row3 .element:nth-child(5) { grid-column: 15;}
+  .Row3 .element:nth-child(7) { grid-column: 17; }
+  .Row3 .element:nth-child(8) { grid-column: 18; }
+  .Row4 .element:nth-child(1) { grid-column: 1; }
+  .Row4 .element:nth-child(2) { grid-column: 2; }
+  .Row4 .element:nth-child(3) { grid-column: 3; }
+  .Row4 .element:nth-child(4) { grid-column: 4; }
+  .Row4 .element:nth-child(5) { grid-column: 5; }
+  .Row4 .element:nth-child(6) { grid-column: 6; }  
+  .Row4 .element:nth-child(7) { grid-column: 7; }
+  .Row4 .element:nth-child(8) { grid-column: 8; }
+  .Row4 .element:nth-child(9) { grid-column: 9; }
+  .Row4 .element:nth-child(10) { grid-column: 10; }
+  .Row4 .element:nth-child(11) { grid-column: 11; }
+  .Row4 .element:nth-child(12) { grid-column: 12; }
+  .Row4 .element:nth-child(13) { grid-column: 13; }
+  .Row4 .element:nth-child(14) { grid-column: 14; }  
+  .Row4 .element:nth-child(15) { grid-column: 15; }
+  .Row4 .element:nth-child(16) { grid-column: 16; }
+  .Row4 .element:nth-child(17) { grid-column: 17; }
+  .Row4 .element:nth-child(18) { grid-column: 18; }
+  .Row5 .element:nth-child(1) { grid-column: 1; }
+  .Row5 .element:nth-child(2) { grid-column: 2; }
+  .Row5 .element:nth-child(3) { grid-column: 3; }
+  .Row5 .element:nth-child(4) { grid-column: 4; }
+  .Row5 .element:nth-child(5) { grid-column: 5; }
+  .Row5 .element:nth-child(6) { grid-column: 6; }  
+  .Row5 .element:nth-child(7) { grid-column: 7; }
+  .Row5 .element:nth-child(8) { grid-column: 8; }
+  .Row5 .element:nth-child(9) { grid-column: 9; }
+  .Row5 .element:nth-child(10) { grid-column: 10; }
+  .Row5 .element:nth-child(11) { grid-column: 11; }
+  .Row5 .element:nth-child(12) { grid-column: 12; }
+  .Row5 .element:nth-child(13) { grid-column: 13; }
+  .Row5 .element:nth-child(14) { grid-column: 14; }  
+  .Row5 .element:nth-child(15) { grid-column: 15; }
+  .Row5 .element:nth-child(16) { grid-column: 16; }
+  .Row5 .element:nth-child(17) { grid-column: 17; }
+  .Row5 .element:nth-child(18) { grid-column: 18; }
+  .Row6 .element:nth-child(1) { grid-column: 1; }
+  .Row6 .element:nth-child(2) { grid-column: 2; }
+  .Row6 .element:nth-child(3) { grid-column: 3; }
+  .Row6 .element:nth-child(4) { grid-column: 4; }
+  .Row6 .element:nth-child(5) { grid-column: 5; }
+  .Row6 .element:nth-child(6) { grid-column: 6; }  
+  .Row6 .element:nth-child(7) { grid-column: 7; }
+  .Row6 .element:nth-child(8) { grid-column: 8; }
+  .Row6 .element:nth-child(9) { grid-column: 9; }
+  .Row6 .element:nth-child(10) { grid-column: 10; }
+  .Row6 .element:nth-child(11) { grid-column: 11; }
+  .Row6 .element:nth-child(12) { grid-column: 12; }
+  .Row6 .element:nth-child(13) { grid-column: 13; }
+  .Row6 .element:nth-child(14) { grid-column: 14; }  
+  .Row6 .element:nth-child(15) { grid-column: 15; }
+  .Row6 .element:nth-child(16) { grid-column: 16; }
+  .Row6 .element:nth-child(17) { grid-column: 17; }
+  .Row6 .element:nth-child(18) { grid-column: 18; }
+  .Row7 .element:nth-child(1) { grid-column: 1; }
+  .Row7 .element:nth-child(2) { grid-column: 2; }
+  .Row7 .element:nth-child(3) { grid-column: 3; }
+  .Row7 .element:nth-child(4) { grid-column: 4; }
+  .Row7 .element:nth-child(5) { grid-column: 5; }
+  .Row7 .element:nth-child(6) { grid-column: 6; }  
+  .Row7 .element:nth-child(7) { grid-column: 7; }
+  .Row7 .element:nth-child(8) { grid-column: 8; }
+  .Row7 .element:nth-child(9) { grid-column: 9; }
+  .Row7 .element:nth-child(10) { grid-column: 10; }
+  .Row7 .element:nth-child(11) { grid-column: 11; }
+  .Row7 .element:nth-child(12) { grid-column: 12; }
+  .Row7 .element:nth-child(13) { grid-column: 13; }
+  .Row7 .element:nth-child(14) { grid-column: 14; }  
+  .Row7 .element:nth-child(15) { grid-column: 15; }
+  .Row7 .element:nth-child(16) { grid-column: 16; }
+  .Row7 .element:nth-child(17) { grid-column: 17; }
+  .Row7 .element:nth-child(18) { grid-column: 18; }
+  .Row8 .element:nth-child(1) { grid-column: 4; }
+  .Row8 .element:nth-child(2) { grid-column: 5; }
+  .Row8 .element:nth-child(3) { grid-column: 6; }  
+  .Row8 .element:nth-child(4) { grid-column: 7; }
+  .Row8 .element:nth-child(5) { grid-column: 8; }
+  .Row8 .element:nth-child(6) { grid-column: 9; }
+  .Row8 .element:nth-child(7) { grid-column: 10; }
+  .Row8 .element:nth-child(8) { grid-column: 11; }
+  .Row8 .element:nth-child(9) { grid-column: 12; }
+  .Row8 .element:nth-child(10) { grid-column: 13; }
+  .Row8 .element:nth-child(11) { grid-column: 14; }  
+  .Row8 .element:nth-child(12) { grid-column: 15; }
+  .Row8 .element:nth-child(13) { grid-column: 16; }
+  .Row8 .element:nth-child(14) { grid-column: 17; }
+  .Row9 .element:nth-child(1) { grid-column: 4; }
+  .Row9 .element:nth-child(2) { grid-column: 5; }
+  .Row9 .element:nth-child(3) { grid-column: 6; }  
+  .Row9 .element:nth-child(4) { grid-column: 7; }
+  .Row9 .element:nth-child(5) { grid-column: 8; }
+  .Row9 .element:nth-child(6) { grid-column: 9; }
+  .Row9 .element:nth-child(7) { grid-column: 10; }
+  .Row9 .element:nth-child(8) { grid-column: 11; }
+  .Row9 .element:nth-child(9) { grid-column: 12; }
+  .Row9 .element:nth-child(10) { grid-column: 13; }
+  .Row9 .element:nth-child(11) { grid-column: 14; }  
+  .Row9 .element:nth-child(12) { grid-column: 15; }
+  .Row9 .element:nth-child(13) { grid-column: 16; }
+  .Row9 .element:nth-child(14) { grid-column: 17; }
+
+  @media screen and (max-width: 768px) {
+    .periodic-table {
+      grid-template-columns: repeat(6, 1fr); 
+    }
+    .element {
+      min-width: 4 0px;
+    }
+  }
+  
+  

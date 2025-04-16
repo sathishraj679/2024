@@ -1,0 +1,37 @@
+
+services:
+  # Express API service
+  app:
+    build: .
+    container_name: apollonia_dental_care
+    ports:
+      - "5000:5000"
+    volumes:
+       - ./src:/usr/src/app
+       - /usr/src/app/node_modules
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/apollonia_dental_care
+      
+  # MongoDB service
+  mongo:
+    image: mongo:6
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+      - ./docker/mongo_init.js:/docker-entrypoint-initdb.d/mongo_init.js:ro
+
+  # Frontend service (Static HTML + CSS + JS)
+  frontend:
+    image: nginx:alpine
+    container_name: frontend_app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src/views:/usr/share/nginx/html
+
+volumes:
+  mongo-data:

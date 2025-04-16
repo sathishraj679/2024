@@ -13,13 +13,13 @@ function placeOrder() {
     .then(response => response.json())
     .then(data => {
       if (data.success) {
-        responseMessage.textContent = "Your order is getting prepared!";
+        responseMessage.textContent = data.message;
 
         setTimeout(() => {
             responseMessage.textContent = "Your order is here!";
           }, 10000); 
       } else {
-        responseMessage.textContent = data.message || "Sorry, not available at the moment.";
+        responseMessage.textContent = data.message ;
       }
     })
     .catch(error => {

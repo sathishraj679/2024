@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Periodic Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Periodic Table</h1>
+  <div class="periodic-table">
+    <div class="legend-container">
+      <div class="legend-item"><span class="circle alkali-metal"></span> Alkali metals</div>
+      <div class="legend-item"><span class="circle alkaline-earth-metal"></span> Alkaline earth metals</div>
+      <div class="legend-item"><span class="circle transition-metal"></span> Transition metals</div>
+      <div class="legend-item"><span class="circle post-transition-metal"></span> Post-transition metals</div>
+      <div class="legend-item"><span class="circle metalloid"></span> Metalloids</div>
+      <div class="legend-item"><span class="circle reactive-nonmetal"></span> Reactive non-metals</div>
+      <div class="legend-item"><span class="circle noble-gas"></span> Noble gases</div>
+      <div class="legend-item"><span class="circle lanthanide"></span> Lanthanides</div>
+      <div class="legend-item"><span class="circle actinide"></span> Actinides</div>
+      <div class="legend-item"><span class="circle unknown"></span> Unknown properties</div>
+  </div>
+    <div class="Row1"> 
+        <div class="element" data-name="Hydrogen" data-origin="Universe" data-use="Fuel and Industry">
+            <span class="atomic-number">1</span>
+            <span class="symbol">H</span>
+            <span class="name">Hydrogen</span>
+          </div>
+         
+          <div class="element" data-name="Helium" data-origin="Stars" data-use="Balloons and Cooling">
+            <span class="atomic-number">2</span>
+            <span class="symbol">He</span>
+            <span class="name">Helium</span>
+          </div>
+    </div>
+    <div class="Row2"> 
+        <div class="element" data-name="Lithium" data-origin="Earth's Crust" data-use="Batteries">
+            <span class="atomic-number">3</span>
+            <span class="symbol">Li</span>
+            <span class="name">Lithium</span>
+          </div>
+          
+          <div class="element" data-name="Beryllium" data-origin="Earth's Crust" data-use="Aerospace and Electronics">
+            <span class="atomic-number">4</span>
+            <span class="symbol">Be</span>
+            <span class="name">Beryllium</span>
+          </div>
+          <div class="element" data-name="Boron" data-origin="Earth's Crust" data-use="Glass and Ceramics">
+            <span class="atomic-number">5</span>
+            <span class="symbol">B</span>
+            <span class="name">Boron</span>
+          </div>
+          <div class="element" data-name="Carbon" data-origin="Earth's Crust" data-use="Life, Steel, and Fuels">
+            <span class="atomic-number">6</span>
+            <span class="symbol">C</span>
+            <span class="name">Carbon</span>
+          </div>
+          <div class="element" data-name="Nitrogen" data-origin="Atmosphere" data-use="Fertilizers and Cooling">
+            <span class="atomic-number">7</span>
+            <span class="symbol">N</span>
+            <span class="name">Nitrogen</span>
+          </div>
+          <div class="element" data-name="Oxygen" data-origin="Atmosphere" data-use="Breathing and Combustion">
+            <span class="atomic-number">8</span>
+            <span class="symbol">O</span>
+            <span class="name">Oxygen</span>
+          </div>
+          <div class="element" data-name="Fluorine" data-origin="Earth's Crust" data-use="Toothpaste and Teflon">
+            <span class="atomic-number">9</span>
+            <span class="symbol">F</span>
+            <span class="name">Fluorine</span>
+          </div>
+          <div class="element" data-name="Neon" data-origin="Atmosphere" data-use="Lighting and Cryogenics">
+            <span class="atomic-number">10</span>
+            <span class="symbol">Ne</span>
+            <span class="name">Neon</span>
+          </div>
+    </div>
+    <div class="Row3"> 
+        <div class="element" data-name="Sodium" data-origin="Earth's Crust" data-use="Salt and Chemicals">
+            <span class="atomic-number">11</span>
+            <span class="symbol">Na</span>
+            <span class="name">Sodium</span>
+          </div>
+          <div class="element" data-name="Magnesium" data-origin="Earth's Crust" data-use="Alloys and Fireworks">
+            <span class="atomic-number">12</span>
+            <span class="symbol">Mg</span>
+            <span class="name">Magnesium</span>
+          </div>
+          <div class="element" data-name="Aluminum" data-origin="Earth's Crust" data-use="Packaging and Construction">
+            <span class="atomic-number">13</span>
+            <span class="symbol">Al</span>
+            <span class="name">Aluminum</span>
+          </div>
+          <div class="element" data-name="Silicon" data-origin="Earth's Crust" data-use="Electronics and Glass">
+            <span class="atomic-number">14</span>
+            <span class="symbol">Si</span>
+            <span class="name">Silicon</span>
+          </div>
+          <div class="element" data-name="Phosphorus" data-origin="Earth's Crust" data-use="Fertilizers and Explosives">
+            <span class="atomic-number">15</span>
+            <span class="symbol">P</span>
+            <span class="name">Phosphorus</span>
+          </div>
+          <div class="element" data-name="Sulfur" data-origin="Earth's Crust" data-use="Fertilizers and Rubber">
+            <span class="atomic-number">16</span>
+            <span class="symbol">S</span>
+            <span class="name">Sulfur</span>
+          </div>
+          <div class="element" data-name="Chlorine" data-origin="Earth's Crust" data-use="Water Purification">
+            <span class="atomic-number">17</span>
+            <span class="symbol">Cl</span>
+            <span class="name">Chlorine</span>
+          </div>
+          <div class="element" data-name="Argon" data-origin="Atmosphere" data-use="Lighting and Welding">
+            <span class="atomic-number">18</span>
+            <span class="symbol">Ar</span>
+            <span class="name">Argon</span>
+          </div>
+    </div>
+    <div class="Row4">
+        <div class="element" data-name="Potassium" data-origin="Earth's Crust" data-use="Fertilizers and Medicine">
+            <span class="atomic-number">19</span>
+            <span class="symbol">K</span>
+            <span class="name">Potassium</span>
+          </div>
+          <div class="element" data-name="Calcium" data-origin="Earth's Crust" data-use="Bones and Cement">
+            <span class="atomic-number">20</span>
+            <span class="symbol">Ca</span>
+            <span class="name">Calcium</span>
+          </div>
+          <div class="element" data-name="Scandium" data-origin="Earth's Crust" data-use="Alloys">
+            <span class="atomic-number">21</span>
+            <span class="symbol">Sc</span>
+            <span class="name">Scandium</span>
+          </div>
+          <div class="element" data-name="Titanium" data-origin="Earth's Crust" data-use="Aerospace and Implants">
+            <span class="atomic-number">22</span>
+            <span class="symbol">Ti</span>
+            <span class="name">Titanium</span>
+          </div>
+          <div class="element" data-name="Vanadium" data-origin="Earth's Crust" data-use="Steel Alloys">
+            <span class="atomic-number">23</span>
+            <span class="symbol">V</span>
+            <span class="name">Vanadium</span>
+          </div>
+          <div class="element" data-name="Chromium" data-origin="Earth's Crust" data-use="Stainless Steel">
+            <span class="atomic-number">24</span>
+            <span class="symbol">Cr</span>
+            <span class="name">Chromium</span>
+          </div>
+          <div class="element" data-name="Manganese" data-origin="Earth's Crust" data-use="Steel and Batteries">
+            <span class="atomic-number">25</span>
+            <span class="symbol">Mn</span>
+            <span class="name">Manganese</span>
+          </div>
+          <div class="element" data-name="Iron" data-origin="Earth's Core" data-use="Construction and Tools">
+            <span class="atomic-number">26</span>
+            <span class="symbol">Fe</span>
+            <span class="name">Iron</span>
+          </div>
+          <div class="element" data-name="Cobalt" data-origin="Earth's Crust" data-use="Magnets and Alloys">
+            <span class="atomic-number">27</span>
+            <span class="symbol">Co</span>
+            <span class="name">Cobalt</span>
+          </div>
+          <div class="element" data-name="Nickel" data-origin="Earth's Crust" data-use="Batteries and Coins">
+            <span class="atomic-number">28</span>
+            <span class="symbol">Ni</span>
+            <span class="name">Nickel</span>
+          </div>
+          <div class="element" data-name="Copper" data-origin="Earth's Crust" data-use="Wiring and Coins">
+            <span class="atomic-number">29</span>
+            <span class="symbol">Cu</span>
+            <span class="name">Copper</span>
+          </div>
+          <div class="element" data-name="Zinc" data-origin="Earth's Crust" data-use="Galvanizing and Alloys">
+            <span class="atomic-number">30</span>
+            <span class="symbol">Zn</span>
+            <span class="name">Zinc</span>
+          </div>
+          <div class="element" data-name="Gallium" data-origin="Earth's Crust" data-use="Electronics and LEDs">
+            <span class="atomic-number">31</span>
+            <span class="symbol">Ga</span>
+            <span class="name">Gallium</span>
+          </div>
+          <div class="element" data-name="Germanium" data-origin="Earth's Crust" data-use="Electronics and Optics">
+            <span class="atomic-number">32</span>
+            <span class="symbol">Ge</span>
+            <span class="name">Germanium</span>
+          </div>
+          <div class="element" data-name="Arsenic" data-origin="Earth's Crust" data-use="Alloys and Semiconductors">
+            <span class="atomic-number">33</span>
+            <span class="symbol">As</span>
+            <span class="name">Arsenic</span>
+          </div>
+          <div class="element" data-name="Selenium" data-origin="Earth's Crust" data-use="Glass and Electronics">
+            <span class="atomic-number">34</span>
+            <span class="symbol">Se</span>
+            <span class="name">Selenium</span>
+          </div>
+          <div class="element" data-name="Bromine" data-origin="Earth's Crust" data-use="Flame Retardants">
+            <span class="atomic-number">35</span>
+            <span class="symbol">Br</span>
+            <span class="name">Bromine</span>
+          </div>
+          <div class="element" data-name="Krypton" data-origin="Atmosphere" data-use="Lighting and Lasers">
+            <span class="atomic-number">36</span>
+            <span class="symbol">Kr</span>
+            <span class="name">Krypton</span>
+          </div>
+         </div>
+    <div class="Row5"> 
+        
+<div class="element" data-name="Rubidium" data-origin="Earth's Crust" data-use="Atomic Clocks and Research">
+    <span class="atomic-number">37</span>
+    <span class="symbol">Rb</span>
+    <span class="name">Rubidium</span>
+  </div>
+  <div class="element" data-name="Strontium" data-origin="Earth's Crust" data-use="Fireworks and Medical Applications">
+    <span class="atomic-number">38</span>
+    <span class="symbol">Sr</span>
+    <span class="name">Strontium</span>
+  </div>
+  <div class="element" data-name="Yttrium" data-origin="Earth's Crust" data-use="Lasers and Alloys">
+    <span class="atomic-number">39</span>
+    <span class="symbol">Y</span>
+    <span class="name">Yttrium</span>
+  </div>
+  <div class="element" data-name="Zirconium" data-origin="Earth's Crust" data-use="Nuclear Reactors and Alloys">
+    <span class="atomic-number">40</span>
+    <span class="symbol">Zr</span>
+    <span class="name">Zirconium</span>
+  </div>
+  <div class="element" data-name="Niobium" data-origin="Earth's Crust" data-use="Steel Alloys">
+    <span class="atomic-number">41</span>
+    <span class="symbol">Nb</span>
+    <span class="name">Niobium</span>
+  </div>
+  <div class="element" data-name="Molybdenum" data-origin="Earth's Crust" data-use="Steel Alloys and Catalysts">
+    <span class="atomic-number">42</span>
+    <span class="symbol">Mo</span>
+    <span class="name">Molybdenum</span>
+  </div>
+  <div class="element" data-name="Technetium" data-origin="Synthetic" data-use="Medical Imaging">
+    <span class="atomic-number">43</span>
+    <span class="symbol">Tc</span>
+    <span class="name">Technetium</span>
+  </div>
+  <div class="element" data-name="Ruthenium" data-origin="Earth's Crust" data-use="Electronics and Alloys">
+    <span class="atomic-number">44</span>
+    <span class="symbol">Ru</span>
+    <span class="name">Ruthenium</span>
+  </div>
+  <div class="element" data-name="Rhodium" data-origin="Earth's Crust" data-use="Catalysts and Jewelry">
+    <span class="atomic-number">45</span>
+    <span class="symbol">Rh</span>
+    <span class="name">Rhodium</span>
+  </div>
+  <div class="element" data-name="Palladium" data-origin="Earth's Crust" data-use="Catalysts and Electronics">
+    <span class="atomic-number">46</span>
+    <span class="symbol">Pd</span>
+    <span class="name">Palladium</span>
+  </div>
+  <div class="element" data-name="Silver" data-origin="Earth's Crust" data-use="Jewelry and Electronics">
+    <span class="atomic-number">47</span>
+    <span class="symbol">Ag</span>
+    <span class="name">Silver</span>
+  </div>
+  <div class="element" data-name="Cadmium" data-origin="Earth's Crust" data-use="Batteries and Pigments">
+    <span class="atomic-number">48</span>
+    <span class="symbol">Cd</span>
+    <span class="name">Cadmium</span>
+  </div>
+  <div class="element" data-name="Indium" data-origin="Earth's Crust" data-use="Touchscreens and Electronics">
+    <span class="atomic-number">49</span>
+    <span class="symbol">In</span>
+    <span class="name">Indium</span>
+  </div>
+  <div class="element" data-name="Tin" data-origin="Earth's Crust" data-use="Solder and Alloys">
+    <span class="atomic-number">50</span>
+    <span class="symbol">Sn</span>
+    <span class="name">Tin</span>
+  </div>
+  <div class="element" data-name="Antimony" data-origin="Earth's Crust" data-use="Flame Retardants">
+    <span class="atomic-number">51</span>
+    <span class="symbol">Sb</span>
+    <span class="name">Antimony</span>
+  </div>
+  <div class="element" data-name="Tellurium" data-origin="Earth's Crust" data-use="Alloys and Electronics">
+    <span class="atomic-number">52</span>
+    <span class="symbol">Te</span>
+    <span class="name">Tellurium</span>
+  </div>
+  <div class="element" data-name="Iodine" data-origin="Earth's Crust" data-use="Medicine and Disinfectants">
+    <span class="atomic-number">53</span>
+    <span class="symbol">I</span>
+    <span class="name">Iodine</span>
+  </div>
+  <div class="element" data-name="Xenon" data-origin="Atmosphere" data-use="Lighting and Medical Imaging">
+    <span class="atomic-number">54</span>
+    <span class="symbol">Xe</span>
+    <span class="name">Xenon</span>
+  </div>
+    </div>
+
+    <div class="Row6">
+        <div class="element" data-name="Cesium" data-origin="Earth's Crust" data-use="Atomic Clocks and Radiation Detectors">
+            <span class="atomic-number">55</span>
+            <span class="symbol">Cs</span>
+            <span class="name">Caesium</span>
+          </div>
+          <div class="element" data-name="Barium" data-origin="Earth's Crust" data-use="Fireworks and Drilling Fluids">
+            <span class="atomic-number">56</span>
+            <span class="symbol">Ba</span>
+            <span class="name">Barium</span>
+          </div>
+          <div class="element" data-name="Lanthanum" data-origin="Earth's Crust" data-use="Catalysts and Alloys">
+            <span class="atomic-number">57</span>
+            <span class="symbol">La</span>
+            <span class="name">Lanthanum</span>
+          </div>
+          <div class="element" data-name="Hafnium" data-origin="Earth's Crust" data-use="Nuclear Reactors and Electronics">
+            <span class="atomic-number">72</span>
+            <span class="symbol">Hf</span>
+            <span class="name">Hafnium</span>
+          </div>
+          <div class="element" data-name="Tantalum" data-origin="Earth's Crust" data-use="Capacitors and Surgical Implants">
+            <span class="atomic-number">73</span>
+            <span class="symbol">Ta</span>
+            <span class="name">Tantalum</span>
+          </div>
+          <div class="element" data-name="Tungsten" data-origin="Earth's Crust" data-use="Light Bulb Filaments and Alloys">
+            <span class="atomic-number">74</span>
+            <span class="symbol">W</span>
+            <span class="name">Tungsten</span>
+          </div>
+          <div class="element" data-name="Rhenium" data-origin="Earth's Crust" data-use="Jet Engines and Catalysts">
+            <span class="atomic-number">75</span>
+            <span class="symbol">Re</span>
+            <span class="name">Rhenium</span>
+          </div>
+          <div class="element" data-name="Osmium" data-origin="Earth's Crust" data-use="Alloys and Catalysts">
+            <span class="atomic-number">76</span>
+            <span class="symbol">Os</span>
+            <span class="name">Osmium</span>
+          </div>
+          <div class="element" data-name="Iridium" data-origin="Earth's Crust" data-use="Alloys and Catalysts">
+            <span class="atomic-number">77</span>
+            <span class="symbol">Ir</span>
+            <span class="name">Iridium</span>
+          </div>
+          <div class="element" data-name="Platinum" data-origin="Earth's Crust" data-use="Jewelry and Catalysts">
+            <span class="atomic-number">78</span>
+            <span class="symbol">Pt</span>
+            <span class="name">Platinum</span>
+          </div>
+          <div class="element" data-name="Gold" data-origin="Earth's Crust" data-use="Jewelry and Electronics">
+            <span class="atomic-number">79</span>
+            <span class="symbol">Au</span>
+            <span class="name">Gold</span>
+          </div>
+          <div class="element" data-name="Mercury" data-origin="Earth's Crust" data-use="Thermometers and Electrical Switches">
+            <span class="atomic-number">80</span>
+            <span class="symbol">Hg</span>
+            <span class="name">Mercury</span>
+          </div>
+          <div class="element" data-name="Thallium" data-origin="Earth's Crust" data-use="Electronics and Medical Imaging">
+            <span class="atomic-number">81</span>
+            <span class="symbol">Tl</span>
+            <span class="name">Thallium</span>
+          </div>
+          <div class="element" data-name="Lead" data-origin="Earth's Crust" data-use="Batteries and Shielding">
+            <span class="atomic-number">82</span>
+            <span class="symbol">Pb</span>
+            <span class="name">Lead</span>
+          </div>
+          <div class="element" data-name="Bismuth" data-origin="Earth's Crust" data-use="Cosmetics and Pharmaceuticals">
+            <span class="atomic-number">83</span>
+            <span class="symbol">Bi</span>
+            <span class="name">Bismuth</span>
+          </div>
+          <div class="element" data-name="Polonium" data-origin="Earth's Crust" data-use="Nuclear Applications">
+            <span class="atomic-number">84</span>
+            <span class="symbol">Po</span>
+            <span class="name">Polonium</span>
+          </div>
+          <div class="element" data-name="Astatine" data-origin="Earth's Crust" data-use="Research and Medicine">
+            <span class="atomic-number">85</span>
+            <span class="symbol">At</span>
+            <span class="name">Astatine</span>
+          </div>
+          <div class="element" data-name="Radon" data-origin="Earth's Crust" data-use="Radiotherapy">
+            <span class="atomic-number">86</span>
+            <span class="symbol">Rn</span>
+            <span class="name">Radon</span>
+          </div>
+         </div>
+
+    <div class="Row7">
+        <div class="element" data-name="Francium" data-origin="Earth's Crust" data-use="Research">
+            <span class="atomic-number">87</span>
+            <span class="symbol">Fr</span>
+            <span class="name">Francium</span>
+          </div>
+          <div class="element" data-name="Radium" data-origin="Earth's Crust" data-use="Radiotherapy and Luminous Paint">
+            <span class="atomic-number">88</span>
+            <span class="symbol">Ra</span>
+            <span class="name">Radium</span>
+          </div>
+          <div class="element" data-name="Actinium" data-origin="Earth's Crust" data-use="Radiation Therapy">
+            <span class="atomic-number">89</span>
+            <span class="symbol">Ac</span>
+            <span class="name">Actinium</span>
+          </div>
+          <div class="element" data-name="Rutherfordium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">104</span>
+            <span class="symbol">Rf</span>
+            <span class="name">Rutherfordium</span>
+          </div>
+          <div class="element" data-name="Dubnium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">105</span>
+            <span class="symbol">Db</span>
+            <span class="name">Dubnium</span>
+          </div>
+          <div class="element" data-name="Seaborgium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">106</span>
+            <span class="symbol">Sg</span>
+            <span class="name">Seaborgium</span>
+          </div>
+          <div class="element" data-name="Bohrium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">107</span>
+            <span class="symbol">Bh</span>
+            <span class="name">Bohrium</span>
+          </div>
+          <div class="element" data-name="Hassium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">108</span>
+            <span class="symbol">Hs</span>
+            <span class="name">Hassium</span>
+          </div>
+          <div class="element" data-name="Meitnerium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">109</span>
+            <span class="symbol">Mt</span>
+            <span class="name">Meitnerium</span>
+          </div>
+          <div class="element" data-name="Darmstadtium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">110</span>
+            <span class="symbol">Ds</span>
+            <span class="name">Darmstadtium</span>
+          </div>
+          <div class="element" data-name="Roentgenium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">111</span>
+            <span class="symbol">Rg</span>
+            <span class="name">Roentgenium</span>
+          </div>
+          <div class="element" data-name="Copernicium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">112</span>
+            <span class="symbol">Cn</span>
+            <span class="name">Copernicium</span>
+          </div>
+          <div class="element" data-name="Nihonium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">113</span>
+            <span class="symbol">Nh</span>
+            <span class="name">Nihonium</span>
+          </div>
+        <div class="element" data-name="Flerovium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">114</span>
+            <span class="symbol">Fl</span>
+            <span class="name">Flerovium</span>
+          </div>
+          <div class="element" data-name="Moscovium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">115</span>
+            <span class="symbol">Mc</span>
+            <span class="name">Moscovium</span>
+          </div>
+          <div class="element" data-name="Livermorium" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">116</span>
+            <span class="symbol">Lv</span>
+            <span class="name">Livermorium</span>
+          </div>
+          <div class="element" data-name="Tennessine" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">117</span>
+            <span class="symbol">Ts</span>
+            <span class="name">Tennessine</span>
+          </div>
+          <div class="element" data-name="Oganesson" data-origin="Man-made" data-use="Nuclear Research">
+            <span class="atomic-number">118</span>
+            <span class="symbol">Og</span>
+            <span class="name">Oganesson</span>
+          </div>
+         </div>
+
+    <div class="Row8">  
+      <div class="element" data-name="Cerium" data-origin="Earth's Crust" data-use="Catalysts and Polishing">
+        <span class="atomic-number">58</span>
+        <span class="symbol">Ce</span>
+        <span class="name">Cerium</span>
+      </div>
+      <div class="element" data-name="Praseodymium" data-origin="Earth's Crust" data-use="Magnets and Alloys">
+        <span class="atomic-number">59</span>
+        <span class="symbol">Pr</span>
+        <span class="name">Praseodymium</span>
+      </div>
+      <div class="element" data-name="Neodymium" data-origin="Earth's Crust" data-use="Magnets and Lasers">
+        <span class="atomic-number">60</span>
+        <span class="symbol">Nd</span>
+        <span class="name">Neodymium</span>
+      </div>
+      <div class="element" data-name="Promethium" data-origin="Earth's Crust" data-use="Magnets and Lasers">
+        <span class="atomic-number">61</span>
+        <span class="symbol">Pm</span>
+        <span class="name">Promethium</span>
+      </div>
+      <div class="element" data-name="Samarium" data-origin="Earth's Crust" data-use="Magnets and Lasers">
+        <span class="atomic-number">62</span>
+        <span class="symbol">Sm</span>
+        <span class="name">Samarium</span>
+      </div>
+      <div class="element" data-name="Europium" data-origin="Earth's Crust" data-use="Fluorescent Lamps and Lasers">
+        <span class="atomic-number">63</span>
+        <span class="symbol">Eu</span>
+        <span class="name">Europium</span>
+      </div>
+      <div class="element" data-name="Gadolinium" data-origin="Earth's Crust" data-use="MRI and Nuclear Reactors">
+        <span class="atomic-number">64</span>
+        <span class="symbol">Gd</span>
+        <span class="name">Gadolinium</span>
+      </div>
+      <div class="element" data-name="Terbium" data-origin="Earth's Crust" data-use="Phosphors and Magnets">
+        <span class="atomic-number">65</span>
+        <span class="symbol">Tb</span>
+        <span class="name">Terbium</span>
+      </div>
+      <div class="element" data-name="Dysprosium" data-origin="Earth's Crust" data-use="Magnets and Lasers">
+        <span class="atomic-number">66</span>
+        <span class="symbol">Dy</span>
+        <span class="name">Dysprosium</span>
+      </div>
+      <div class="element" data-name="Holmium" data-origin="Earth's Crust" data-use="Magnets and Lasers">
+        <span class="atomic-number">67</span>
+        <span class="symbol">Ho</span>
+        <span class="name">Holmium</span>
+      </div>
+      <div class="element" data-name="Erbium" data-origin="Earth's Crust" data-use="Fiber Optics and Lasers">
+        <span class="atomic-number">68</span>
+        <span class="symbol">Er</span>
+        <span class="name">Erbium</span>
+      </div>
+      <div class="element" data-name="Thulium" data-origin="Earth's Crust" data-use="Lasers and X-ray Equipment">
+        <span class="atomic-number">69</span>
+        <span class="symbol">Tm</span>
+        <span class="name">Thulium</span>
+      </div>
+      <div class="element" data-name="Ytterbium" data-origin="Earth's Crust" data-use="Lasers and Electronics">
+        <span class="atomic-number">70</span>
+        <span class="symbol">Yb</span>
+        <span class="name">Ytterbium</span>
+      </div>
+      <div class="element" data-name="Lutetium" data-origin="Earth's Crust" data-use="Catalysts and MRI Contrast Agents">
+        <span class="atomic-number">71</span>
+        <span class="symbol">Lu</span>
+        <span class="name">Lutetium</span>
+      </div>
+    </div>
+
+    <div class="Row9"><div class="element" data-name="Thorium" data-origin="Earth's Crust" data-use="Nuclear Reactors and Alloys">
+        <span class="atomic-number">90</span>
+        <span class="symbol">Th</span>
+        <span class="name">Thorium</span>
+      </div>
+      <div class="element" data-name="Protactinium" data-origin="Earth's Crust" data-use="Nuclear Research">
+        <span class="atomic-number">91</span>
+        <span class="symbol">Pa</span>
+        <span class="name">Protactinium</span>
+      </div>
+      <div class="element" data-name="Uranium" data-origin="Earth's Crust" data-use="Nuclear Fuel and Weapons">
+        <span class="atomic-number">92</span>
+        <span class="symbol">U</span>
+        <span class="name">Uranium</span>
+      </div>
+      <div class="element" data-name="Neptunium" data-origin="Man-made" data-use="Nuclear Reactors">
+        <span class="atomic-number">93</span>
+        <span class="symbol">Np</span>
+        <span class="name">Neptunium</span>
+      </div>
+      <div class="element" data-name="Plutonium" data-origin="Man-made" data-use="Nuclear Fuel and Weapons">
+        <span class="atomic-number">94</span>
+        <span class="symbol">Pu</span>
+        <span class="name">Plutonium</span>
+      </div>
+      <div class="element" data-name="Americium" data-origin="Man-made" data-use="Smoke Detectors and Radiation Sources">
+        <span class="atomic-number">95</span>
+        <span class="symbol">Am</span>
+        <span class="name">Americium</span>
+      </div>
+      <div class="element" data-name="Curium" data-origin="Man-made" data-use="Nuclear Reactors and Medical Applications">
+        <span class="atomic-number">96</span>
+        <span class="symbol">Cm</span>
+        <span class="name">Curium</span>
+      </div>
+      <div class="element" data-name="Berkelium" data-origin="Man-made" data-use="Nuclear Research">
+        <span class="atomic-number">97</span>
+        <span class="symbol">Bk</span>
+        <span class="name">Berkelium</span>
+      </div>
+      <div class="element" data-name="Californium" data-origin="Man-made" data-use="Nuclear Reactors and Medical Applications">
+        <span class="atomic-number">98</span>
+        <span class="symbol">Cf</span>
+        <span class="name">Californium</span>
+      </div>
+      <div class="element" data-name="Einsteinium" data-origin="Man-made" data-use="Nuclear Research">
+        <span class="atomic-number">99</span>
+        <span class="symbol">Es</span>
+        <span class="name">Einsteinium</span>
+      </div>
+      <div class="element" data-name="Fermium" data-origin="Man-made" data-use="Nuclear Research">
+        <span class="atomic-number">100</span>
+        <span class="symbol">Fm</span>
+        <span class="name">Fermium</span>
+      </div>
+      <div class="element" data-name="Mendelevium" data-origin="Man-made" data-use="Nuclear Research">
+        <span class="atomic-number">101</span>
+        <span class="symbol">Md</span>
+        <span class="name">Mendelevium</span>
+      </div>
+      <div class="element" data-name="Nobelium" data-origin="Man-made" data-use="Nuclear Research">
+        <span class="atomic-number">102</span>
+        <span class="symbol">No</span>
+        <span class="name">Nobelium</span>
+      </div>
+      <div class="element" data-name="Lawrencium" data-origin="Man-made" data-use="Nuclear Research">
+        <span class="atomic-number">103</span>
+        <span class="symbol">Lr</span>
+        <span class="name">Lawrencium</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script> 
+  </div>
+  <div id="elementModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalSymbol"></p>
+        <p id="modalAtomicNumber"></p>
+        <p id="modalOrigin"></p>
+        <p id="modalUse"></p>
+        <p id="modalMeltingPoint"></p>
+        <p id="modalBoilingPoint"></p>
+        <p id="modalDiscovery"></p>
+    </div>
+</div>
+</body>
+</html>

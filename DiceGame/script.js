@@ -1,4 +1,4 @@
-const listOfAllDice = document.querySelectorAll(".die");
+ const listOfAllDice = document.querySelectorAll(".die");
 const scoreInputs = document.querySelectorAll("#score-options input");
 const scoreSpans = document.querySelectorAll("#score-options span");
 const roundElement = document.getElementById("current-round");
@@ -156,7 +156,7 @@ rollDiceBtn.addEventListener("click", () => {
     updateStats();
     getHighestDuplicates(diceValuesArr);
     detectFullHouse(diceValuesArr);
-
+   checkForStraights(diceValuesArr);
   }
 });
 

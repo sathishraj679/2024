@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Employee</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Add New Employee</h1>
+
+    <form id="add-employee-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      
+      <label for="department">Department:</label>
+      <select id="department" required>
+        <option value="">Select a Department</option>
+      </select>
+
+      <button type="submit">Add Employee</button>
+    </form>
+
+    <a href="index.html">Back to Employee List</a>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
